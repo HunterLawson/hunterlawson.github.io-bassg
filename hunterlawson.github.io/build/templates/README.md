@@ -1,1 +1,0 @@
-# This is the templates directory, put your Jinja2 templates in here
