@@ -10,6 +10,9 @@
     <!-- all sketches -->
     <script src="/assets/js/sketches/SketchBase.js"></script>
     <script src="/assets/js/sketches/Bubble.js"></script>
+    <script src="/assets/js/sketches/MaurerRose.js"></script>
+    <script src="/assets/js/sketches/FlowField.js"></script>
+    <script src="/assets/js/sketches/GameOfLife.js"></script>
     <!-- loader file -->
     <script src="/assets/js/loader.js"></script>
     {% endblock %}
@@ -35,9 +38,7 @@
             </li>
         </ul>
     </nav>
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
+    {% block content %}
+    {% endblock %}
 </body>
 </html>
