@@ -1,11 +1,20 @@
 {% extends 'templates/base.html' %}
-{% block title %}
-    Projects
-{% endblock %}
+{% block scripts %}{% endblock %}
+{% set title = 'Projects' %}
+{% set nav_name = 'projects' %}
 {% block content %}
-    <div id="canvas-container">
-        <div class="socials">
-            <h2>this will be the projects page</h2>
-        </div>
-    </div>
+{#- Hide canvas on smaller screens because it's just too much to look at #}
+<style>
+    @media screen and (max-width: 576px) {
+        #defaultCanvas0 {
+            display: none;
+        }
+    }
+</style>
+<!-- Markdown-content -->
+{% for md in markdown %}
+<section class="card">
+    {{- md }}
+</section>
+{%- endfor %}
 {% endblock %}

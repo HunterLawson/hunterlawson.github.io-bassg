@@ -1,11 +1,4 @@
 {% extends 'templates/base.html' %}
-{% block title %}
-    Home
-{% endblock %}
-{% block content %}
-    <div id="canvas-container">
-        <div class="socials">
-            <h2>this site is under construction</h2>
-        </div>
-    </div>
-{% endblock %}
+{% block scripts %}{{super()}}{% endblock %}
+{% set title = 'Hunter Lawson' %}
+{% set nav_name = 'home' %}
