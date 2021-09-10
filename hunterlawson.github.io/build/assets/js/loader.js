@@ -15,6 +15,7 @@ function setup() {
     sketches.push(new MaurerRose());
     sketches.push(new FlowField());
     sketches.push(new GameOfLife());
+    sketches.push(new MultiplicationCircle());
     // Randomly pick one to use
     sketch = random(sketches);
     sketch.reload();
