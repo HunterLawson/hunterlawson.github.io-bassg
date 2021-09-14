@@ -38,7 +38,7 @@ function draw() {
         case 1:
             sketch.update();
             sketch.show();
-            background(17, 17, 17, timer);
+            background(240, timer);
             if(timer >= 255) {
                 timer = 0;
                 transition = 2;
@@ -53,7 +53,7 @@ function draw() {
         case 2:
             sketch.update();
             sketch.show();
-            background(17, 17, 17, 255 - timer);
+            background(240, 255 - timer);
             if(timer >= 255) {
                 timer = 0;
                 transition = 0;
@@ -65,4 +65,9 @@ function draw() {
 function windowResized() {
     let div = document.getElementById('canvas-container');
     resizeCanvas(div.offsetWidth, div.offsetHeight);
+}
+
+function changeSketch() {
+    timer = 0;
+    transition = 2;
 }

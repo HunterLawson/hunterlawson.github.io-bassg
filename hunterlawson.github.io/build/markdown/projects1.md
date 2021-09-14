@@ -1,4 +1,6 @@
-# project2
-## summary
+# Multiplication Circle Generator
+## Multiplication circle visualizer using custom functions and GUI
 
-this is the description
+Written using the Processing Java library.
+
+### [Read more >>](https://www.github.com/hunterlawson/multiplication_circle)

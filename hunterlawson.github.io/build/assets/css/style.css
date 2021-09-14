@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background: #111111;
+  background: #f0f0f0;
   color: white;
   margin: 0 !important;
   padding: 0 !important;
@@ -198,6 +198,10 @@ main.main-content .container section.card h3 a {
 @media screen and (max-width: 576px) {
   main.main-content {
     padding: 1em 1em 1em 1em;
+  }
+  .navbar nav.navbar-navigation ul li {
+    padding: 4px;
+    margin: 0;
   }
 }
 
