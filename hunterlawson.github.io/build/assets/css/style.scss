@@ -1,8 +1,8 @@
-$background-color: rgb(17, 17, 17);
+$background-color: rgb(240, 240, 240);
 $accent-color: rgb(29, 29, 29);
-$card-color: rgb(19, 19, 19);
+$card-color: rgba(29, 29, 29, 0.95);
 $primary-text-color: white;
-$secondary-text-color: rgb(156, 156, 156);
+$secondary-text-color: rgb(207, 207, 207);
 $link-text-color: rgb(134, 134, 230);
 $action-link-text-color: rgb(243, 243, 243);
 $button-color: rgb(100, 100, 100);
@@ -35,22 +35,21 @@ body {
         align-items: center;
         justify-content: center;
     }
-
     h1 {
         font-size: 1.7em;
         margin: 0.7em;
         font-weight: normal;
         letter-spacing: 0.3em;
     }
-     h2 {
+    h2 {
         margin: 0;
         font-size: 1em;
         font-weight: normal;
         color: $secondary-text-color;
         letter-spacing: 0.1em;
-     }
+    }
 
-     .navbar-subtitle {
+    .navbar-subtitle {
         display: flex;
         .cursor {
             height: auto;
@@ -58,13 +57,12 @@ body {
             background: $secondary-text-color;
             animation: 1s blink step-end infinite;
         }
-     }
+    }
 
-     nav.navbar-navigation {
+    nav.navbar-navigation {
         overflow: hidden;
         ul {
             list-style: none;
-            padding-left: 0;
             li {
                 font-size: 1.1em;
                 display: inline;
@@ -82,7 +80,7 @@ body {
                 }
             }
         }
-     }
+    }
 }
 
 #canvas-container {
@@ -104,15 +102,40 @@ main.main-content {
         flex-direction: column;
         justify-content: center;
 
+        nav.socials {
+            color: black;
+            background: rgba(245, 170, 72, 0.8);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px rgb(27, 27, 27);
+            h1 {
+                text-decoration: underline;
+                text-decoration-thickness: 1px;
+                padding-top: 0;
+            }
+            p {
+                padding: 0;
+                margin: 0;
+            }
+            a {
+                text-decoration: none;
+                font-size: 40px;
+                color: black;
+                text-align: center;
+            }
+        }
+
         section.card {
             margin-bottom: 1em;
-            //border-radius: 2em;
+            border-radius: 1em;
             padding: 0 1em 0 1em;
             background: $card-color;
+            box-shadow: 5px 5px 5px rgb(27, 27, 27);
 
             h1 {
                 color: $primary-text-color;
                 font-weight: normal;
+                font-size: 28px;
                 margin-bottom: 0;
             }
 
@@ -120,11 +143,15 @@ main.main-content {
                 color: $secondary-text-color;
                 font-weight: normal;
                 margin-top: 0.2em;
-                font-size: 1em;
+                font-size: 16px;
+                text-decoration: underline;
+                text-decoration-thickness: 1px;
             }
 
             p {
-                text-align: left;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                //text-align: left;
+                font-size: 16px;
                 a {
                     font-style: italic;
                     color: $link-text-color;
@@ -138,12 +165,20 @@ main.main-content {
                     text-decoration: none;
                     color: $action-link-text-color;
                     background: $button-color;
-                    padding: 0.3em 0.5em;
+                    padding: 0.3em 0.7em;
                     border-radius: 2em;
                 }
             }
         }
     }
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+    
+.grow:hover { 
+    transform: scale(1.1); 
 }
 
 @keyframes blink {
@@ -158,6 +193,16 @@ main.main-content {
 @media screen and (max-width: 576px) {
     main.main-content {
         padding: 1em 1em 1em 1em;
+    }
+    .navbar {
+        nav.navbar-navigation {
+            ul {
+                li {
+                    padding: 4px;
+                    margin: 0;
+                }
+            }
+        }
     }
 }
 

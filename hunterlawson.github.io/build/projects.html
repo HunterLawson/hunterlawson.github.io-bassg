@@ -1,19 +1,15 @@
 {% extends 'templates/base.html' %}
-{% block scripts %}{% endblock %}
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+<script src="/assets/js/ProjectsBackground.js"></script>
+{% endblock %}
 {% set title = 'Projects' %}
 {% set nav_name = 'projects' %}
 {% block content %}
-{#- Hide canvas on smaller screens because it's just too much to look at #}
-<style>
-    @media screen and (max-width: 576px) {
-        #defaultCanvas0 {
-            display: none;
-        }
-    }
-</style>
 <!-- Markdown-content -->
-{% for md in markdown %}
-<section class="card">
+{%- set project_colors = ["rgba(219, 116, 72", "rgba(91, 135, 239", "rgba(94, 134, 86", "rgba(193, 75, 140"] %}
+{%- for md in markdown %}
+<section class="card" >
     {{- md }}
 </section>
 {%- endfor %}

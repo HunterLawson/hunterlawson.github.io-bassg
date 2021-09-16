@@ -11,8 +11,8 @@ class MultiplicationCircle extends SketchBase{
     }
 
     show() {
-        background(17, 17, 17);
-        stroke(255);
+        background(240);
+        stroke(29);
         noFill();
         translate(width/2, height/2);
         strokeWeight(1);
@@ -24,7 +24,6 @@ class MultiplicationCircle extends SketchBase{
             num -= 1;
             let x = this.radius * cos(num);
             let y = this.radius * sin(num);
-            line()
             line(this.radius * cos(i), this.radius * sin(i), x, y);
         }
     }
