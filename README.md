@@ -1,2 +1,2 @@
 # hunterlawson.github.io-bassg
-Personal site BASSG working directory
+Personal site [BASSG](https://www.github.com/hunterlawson/bassg) working directory
