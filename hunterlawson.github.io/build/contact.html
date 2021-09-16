@@ -1,0 +1,20 @@
+{% extends 'templates/base.html' %}
+{% block scripts %}
+{{ super() }}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock %}
+{% set title = 'Contact' %}
+{% set nav_name = 'contact' %}
+{% block content %}
+<nav class="socials">
+    <h1>
+        Reach me:
+    </h1>
+    <a href="https://www.github.com/hunterlawson">
+        <i class="fa fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/hunterlawson">
+        <i class="fa fa-linkedin"></i>
+    </a>
+</nav>
+{% endblock %}

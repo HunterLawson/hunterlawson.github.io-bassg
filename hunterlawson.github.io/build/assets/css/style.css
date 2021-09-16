@@ -52,7 +52,7 @@ body {
   margin: 0;
   font-size: 1em;
   font-weight: normal;
-  color: #9c9c9c;
+  color: #cfcfcf;
   letter-spacing: 0.1em;
 }
 
@@ -65,7 +65,7 @@ body {
 .navbar .navbar-subtitle .cursor {
   height: auto;
   width: 7px;
-  background: #9c9c9c;
+  background: #cfcfcf;
   -webkit-animation: 1s blink step-end infinite;
           animation: 1s blink step-end infinite;
 }
@@ -76,7 +76,6 @@ body {
 
 .navbar nav.navbar-navigation ul {
   list-style: none;
-  padding-left: 0;
 }
 
 .navbar nav.navbar-navigation ul li {
@@ -140,27 +139,61 @@ main.main-content .container {
           justify-content: center;
 }
 
+main.main-content .container nav.socials {
+  color: black;
+  background: rgba(245, 170, 72, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 5px #1b1b1b;
+          box-shadow: 5px 5px 5px #1b1b1b;
+}
+
+main.main-content .container nav.socials h1 {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  padding-top: 0;
+}
+
+main.main-content .container nav.socials p {
+  padding: 0;
+  margin: 0;
+}
+
+main.main-content .container nav.socials a {
+  text-decoration: none;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+}
+
 main.main-content .container section.card {
   margin-bottom: 1em;
+  border-radius: 1em;
   padding: 0 1em 0 1em;
-  background: #131313;
+  background: rgba(29, 29, 29, 0.95);
+  -webkit-box-shadow: 5px 5px 5px #1b1b1b;
+          box-shadow: 5px 5px 5px #1b1b1b;
 }
 
 main.main-content .container section.card h1 {
   color: white;
   font-weight: normal;
+  font-size: 28px;
   margin-bottom: 0;
 }
 
 main.main-content .container section.card h2 {
-  color: #9c9c9c;
+  color: #cfcfcf;
   font-weight: normal;
   margin-top: 0.2em;
-  font-size: 1em;
+  font-size: 16px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 
 main.main-content .container section.card p {
-  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
 }
 
 main.main-content .container section.card p a {
@@ -173,8 +206,18 @@ main.main-content .container section.card h3 a {
   text-decoration: none;
   color: #f3f3f3;
   background: #646464;
-  padding: 0.3em 0.5em;
+  padding: 0.3em 0.7em;
   border-radius: 2em;
+}
+
+.grow {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @-webkit-keyframes blink {

@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M2ZHWKXGB1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-M2ZHWKXGB1');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +31,7 @@
     <title>{{ title }}</title>
 </head>
 <body>
-    {%- set nav_pages = [('home', '/index.html'), ('projects', '/projects.html'), ('about', '/about.html')] %}
+    {%- set nav_pages = [('home', '/index.html'), ('projects', '/projects.html'), ('contact', '/contact.html')] %}
     <div class="navbar">
         <div class="container">
             <div class="navbar-title">

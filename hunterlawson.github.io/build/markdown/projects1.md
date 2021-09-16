@@ -1,6 +1,6 @@
-# Multiplication Circle Generator
-## Multiplication circle visualizer using custom functions and GUI
+# Personal Portfolio Website
+## You are here
 
-Written using the Processing Java library.
+Personal website to practice using web technologies. Uses [p5js](https://p5js.org/) sketches and custom CSS styling. Compiled using [BASSG](https://github.com/hunterlawson/hunterlawson.github.io-bassg) (BASSG source code).
 
-### [Read more >>](https://www.github.com/hunterlawson/multiplication_circle)
+### [Read more >>](https://github.com/hunterlawson/hunterlawson.github.io)
