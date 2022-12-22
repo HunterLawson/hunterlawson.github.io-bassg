@@ -13,25 +13,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css?v=2.0">
+    <link rel="icon" href="./assets/icon.png">
+    <link rel="stylesheet" href="./assets/css/style.css?v=2.0">
     {%- block scripts %}
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
     <!-- all sketches -->
-    <script src="/assets/js/sketches/SketchBase.js"></script>
-    <script src="/assets/js/sketches/Bubble.js"></script>
-    <script src="/assets/js/sketches/MaurerRose.js"></script>
-    <script src="/assets/js/sketches/FlowField.js"></script>
-    <script src="/assets/js/sketches/GameOfLife.js"></script>
-    <script src="/assets/js/sketches/MultiplicationCircle.js"></script>
+    <script src="./assets/js/sketches/SketchBase.js"></script>
+    <script src="./assets/js/sketches/Bubble.js"></script>
+    <script src="./assets/js/sketches/MaurerRose.js"></script>
+    <script src="./assets/js/sketches/FlowField.js"></script>
+    <script src="./assets/js/sketches/GameOfLife.js"></script>
+    <script src="./assets/js/sketches/MultiplicationCircle.js"></script>
     <!-- loader file -->
-    <script src="/assets/js/loader.js"></script>
+    <script src="./assets/js/loader.js"></script>
     {%- endblock %}
     {%- block head %}
     {%- endblock %}
     <title>{{ title }}</title>
 </head>
 <body>
-    {%- set nav_pages = [('home', '/index'), ('projects', '/projects'), ('contact', '/contact')] %}
+    {%- set nav_pages = [('HOME', '/'), ('PROJECTS', '/projects'), ('CONTACT', '/contact')] %}
     <div class="navbar">
         <div class="container">
             <div class="navbar-title">
